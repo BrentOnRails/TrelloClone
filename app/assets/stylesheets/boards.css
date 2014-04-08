@@ -1,0 +1,48 @@
+li.list_entry, li.board_entry {
+
+  background-color: #fafafa;
+  border: 1px solid #d4d4d4;
+
+  text-align: center;
+  font-size: 18px;
+
+  width: 225px;
+  margin: 3px;
+  border-radius: 4px;
+  border-radius: 4px;
+
+  padding:6px 12px 8px 12px;
+  font-size:18px;
+  margin-bottom: 15px;
+
+  float: left;;
+}
+
+.board-object {
+  text-align: left;
+  margin: 0.5em;
+  font-weight: bold;
+  font-size: 1.1em;
+  width: 23%;
+  min-width: 11em;
+  max-width: 19em;
+  height: 7em;
+  background: #23719F;
+}
+
+#board-title {
+  color: #fff;
+  margin: 8px 8px 8px 0;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+button.newBoard {
+  display: block;
+  clear: both;
+}
+
+button.newList {
+  display: block;
+  clear: both;
+}

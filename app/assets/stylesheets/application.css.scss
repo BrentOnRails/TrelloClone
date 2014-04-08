@@ -1,0 +1,200 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+@import 'bootstrap';
+
+* {
+  font-family: helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  margin-top: 3em;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+ol {
+  list-style: none;
+  padding-left: 0;
+  min-height: 10px;
+}
+
+h5 {
+  font-size: 1.15em;
+  margin: 4px 3px 4px 3px;
+  font-weight: bold;
+}
+
+#content {
+  float: left;
+}
+
+.navbar-default {
+  background: black;
+  border: none;
+}
+
+.container-fluid {
+  padding-left: 0;
+}
+
+nav .container-fluid {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#brand {
+  color: white;
+}
+
+#brand-in {
+  @extend #brand;
+  color: white;
+  margin-left: 15%;
+}
+
+#nav-username {
+  color: white;
+}
+
+#sign-up, #log-in {
+  color: white;
+}
+
+.logout-btn {
+  background: #548AA9;
+  border: 1px solid #548AA9;
+}
+
+.btn-taskbin {
+  @extend .btn-primary;
+  background: #1E638B;
+  border: 1px solid #1E638B;
+}
+
+.btn-taskbin-card {
+  @extend .btn-default;
+  border: 1px solid #fff;
+  width: 100%;
+  text-align: left;
+
+  &:hover {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+  }
+}
+
+#dropdown {
+  color: #fff;
+  background: #4F87A6;
+  border: 1px solid #548AA9;
+}
+
+#search-input {
+  border: none;
+  width: 20%;
+}
+
+#board-search-text {
+  background: #91B4C9;
+  border: none;
+}
+
+#search-icon {
+ background: #548AA9;
+ border: 1px solid #548AA9;
+}
+
+.glyphicon-search {
+  color: #fff;
+}
+
+span.title {
+  font-weight: 700;
+  font-size: 28px;
+  position: relative;
+  top: 7px;
+  font-style: italic;
+}
+
+input#logout, input#logout{
+  background-color: white;
+}
+
+div#content {
+  margin:0px auto;
+  width: auto;
+
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.white_area {
+  overflow: scroll;
+  background-color: white;
+  border: 1px dotted black;
+  border-radius: 4px;
+  moz-border-radius: 4px;
+  padding: 30px;
+}
+
+div.board_members {
+  margin-left: 22px;
+}
+
+button.newList {
+  margin: 10px 0;
+}
+
+button#deleteBoard {
+  margin: 10px 22px;
+}
+
+a {
+  text-decoration: none !important;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none !important;
+  padding-left: 0;
+  margin: 0;
+}
+
+
+li {
+  padding-top: 2px;
+  padding-left: 0;
+}
+
+
+.hidden {
+  display: none;
+}
+
+.list-object {
+  @extend .btn;
+  @extend .btn-default;
+
+  &:hover {
+    background-color: #DBDBDB;
+  }
+}
+
+.jumbotron {
+  border-radius: 4px;
+  margin-top: 1em;
+  padding: 30px;
+}

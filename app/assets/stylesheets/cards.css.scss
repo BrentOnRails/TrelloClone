@@ -1,0 +1,142 @@
+.card-progress {
+  color: #B3B3B3;
+  font-size: 0.9em;
+  margin-top: 3px;
+}
+
+.taskbin-card {
+  padding-bottom: 4px;
+}
+
+.new-card-text {
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+.new-card-submit {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-top: 8px;
+}
+
+.add-card-toggle {
+  color: #A9A9A9;
+
+  &:hover {
+    color: #686868;
+  }
+}
+
+.glyphicon-remove {
+  font-size: 25px;
+  vertical-align: middle;
+  padding-top: 7px;
+  margin-left: 0.3em;
+  color: #A9A9A9;
+
+  &:hover {
+    color: #686868;
+  }
+}
+
+.card-description-text {
+  width: 100%;
+}
+
+.card-description-submit {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  margin-top: 8px;
+}
+
+.edit-description-toggle {
+  color: #A9A9A9;
+  font-size: 0.9em;
+
+  &:hover {
+    color: #686868;
+  }
+}
+
+.card-description {
+  margin-top: 8px;
+}
+
+.modal-content {
+  background: #F0F0F0;
+}
+
+.flexwidth {
+  display: inline-block;
+}
+
+.overlay {
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3)
+}
+
+.card_placeholder {
+  background-color: #909090;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+
+li.card_entry {
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #daf1fb;
+  border: 1px solid black;
+  padding: 3px;
+  margin: 3px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-weight: 700
+}
+
+li.placeholder {
+  font-size: 15px;
+  font-style: italic;
+}
+
+ul.todo_list {
+  list-style-type: circle !important;
+}
+
+label.todo_label {
+  display: inline;
+  margin: 2px;
+  padding-right: 10px;
+}
+
+span.newTodo {
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 8px;
+  -moz-border-radius: 8px;
+  padding: 3px;
+  font-size: 12px;
+}
+
+span.newTodo:hover {
+  font-style: italic;
+}
+
+ul.user_list {
+  list-style-type: circle !important;
+}
+
+div.board_members {
+  clear: both;
+}
+
+li.dragged {
+  box-shadow: 5px 5px 2px #888888;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(3deg);
+}
