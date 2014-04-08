@@ -6,6 +6,7 @@ This is my trello clone.
 
 Things I used to make this:
 * Rails 4 backend
+* A heavy does of bootstrap flavor
 * Backbone.js frontend
 * Custom auth system
 * jQuery UI sortable
