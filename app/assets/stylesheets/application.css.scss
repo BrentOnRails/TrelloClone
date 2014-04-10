@@ -59,31 +59,6 @@ nav .container-fluid {
   color: white;
 }
 
-#brand-in {
-  @extend #brand;
-  color: white;
-  margin-left: 15%;
-}
-
-#nav-username {
-  color: white;
-}
-
-#sign-up, #log-in {
-  color: white;
-}
-
-.logout-btn {
-  background: #548AA9;
-  border: 1px solid #548AA9;
-}
-
-.btn-taskbin {
-  @extend .btn-primary;
-  background: #1E638B;
-  border: 1px solid #1E638B;
-}
-
 .btn-taskbin-card {
   @extend .btn-default;
   border: 1px solid #fff;
@@ -94,12 +69,6 @@ nav .container-fluid {
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
   }
-}
-
-#dropdown {
-  color: #fff;
-  background: #4F87A6;
-  border: 1px solid #548AA9;
 }
 
 #search-input {

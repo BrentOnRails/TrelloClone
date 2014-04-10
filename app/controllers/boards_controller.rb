@@ -30,12 +30,6 @@ class BoardsController < ApplicationController
     @board = Board.find(params[:id])
     @board.update_attributes(board_params)
 
-    if params[:newMemberEmail]
-      email = params[:newMemberEmail]
-      new_member = User.find_by_email(email)
-      new_member && !@board.members.include?(new_member) && @board.members << new_member
-    end
-
     if @board.save
       render json: @board
     else

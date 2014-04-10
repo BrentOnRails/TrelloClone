@@ -1,5 +1,5 @@
 <div class="row text-center">
-  <div class="jumbotron col-xs-4 col-xs-offset-4">
+  <div class="jumbotron col-xs-4 col-xs-offset-4 jumbotron-login">
     <h1>Log In... </h1>
 	<h3>... or just hit that big old demo button </h3>
       <form action="<%= users_url %>" method="POST" accept-charset="utf-8">
@@ -35,6 +35,10 @@
 
       <input id="logout" type='submit' value='Log In' class="btn btn-default btn-lg">
     </form>
+	
+	<br>
+	
+	<%= link_to "Sign Up", new_user_url %>
 
 
   </div>

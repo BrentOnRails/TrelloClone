@@ -13,10 +13,14 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <a class="navbar-brand nav-link" id="brand-in" href="#">
+        <span class="glyphicon glyphicon-ok"></span> TrelloBS! <span class="glyphicon glyphicon-ok"></span>
+      </a>
+	  <% if logged_in? %>
       <ul class="nav navbar-nav">
+		  
         <div class="dropdown">
-          <a href="#" id="dropdown" data-toggle="dropdown"
-            class="dropdown-toggle btn btn-primary navbar-btn">
+          <a href="#" id="dropdown" data-toggle="dropdown" class="dropdown-toggle btn btn-primary navbar-btn">
             <span class="glyphicon glyphicon-tasks"></span>  Boards <b class="caret"></b>
           </a>
           <ul class="dropdown-menu" id="boards-dropdown">
@@ -26,16 +30,10 @@
               </li>
             <% end %>
             <li class="divider" id="new-board-divider"></li>
-            <li><a href="#" id="new-board-dropdown-link">+ New Board</a></li>
+            <li><a href="#" id="new-board-dropdown-link">Create New Board</a></li>
           </ul>
         </div>
       </ul>
-
-
-
-      <a class="navbar-brand nav-link" id="brand-in" href="#">
-        <span class="glyphicon glyphicon-ok"></span> TrelloClone <span class="glyphicon glyphicon-ok"></span>
-      </a>
 
       <ul class="nav navbar-nav navbar-right">
         <li class="navbar-text" id="nav-username">
@@ -44,6 +42,7 @@
         <li><%= button_to "X", session_url, :method => :delete,
            :class => "btn btn-danger navbar-btn logout-btn" %></li>
       </ul>
+	  	<% end %>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

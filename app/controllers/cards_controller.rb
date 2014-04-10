@@ -20,12 +20,6 @@ class CardsController < ApplicationController
     @card = Card.find(params[:id])
     @card.update_attributes(update_card_params)
 
-    if params[:newUserEmail]
-      email = params[:newUserEmail]
-      new_user = User.find_by_email(email)
-      new_user && !@card.users.include?(new_user) && @card.users << new_user
-    end
-
     if @card.save
       render json: @card
     else

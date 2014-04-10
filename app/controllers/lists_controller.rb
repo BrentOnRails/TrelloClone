@@ -1,7 +1,8 @@
 class ListsController < ApplicationController
 
   def index
-    @lists = List.where("board_id = ?", params[:board_id])
+    @board = Board.find(params[:board_id])
+    @lists = @board.lists
     render json: @lists
   end
 
