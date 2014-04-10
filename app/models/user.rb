@@ -37,7 +37,7 @@ class User < ActiveRecord::Base
     super(options.merge({ except: [:password_digest, :session_token], include: :cards }))
   end
 
-  def populate_guest
+  def guest_data
     demo = self.boards.create(title: 'Example Board')
 
     todo = demo.lists.create(title: 'To Do', rank: 1)
